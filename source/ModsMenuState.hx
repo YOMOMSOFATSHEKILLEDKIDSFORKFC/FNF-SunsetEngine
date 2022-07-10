@@ -18,6 +18,7 @@ import lime.utils.Assets;
 import flixel.system.FlxSound;
 import openfl.utils.Assets as OpenFlAssets;
 import sys.io.File;
+import flixel.tweens.FlxEase;
 import sys.FileSystem;
 import haxe.Json;
 import haxe.format.JsonParser;
@@ -478,6 +479,7 @@ class ModsMenuState extends MusicBeatState
 			}
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			FlxG.mouse.visible = false;
+			FlxTween.tween(FlxG.camera, {zoom: 5}, 0.8, {ease: FlxEase.expoIn});
 			saveTxt();
 			if(needaReset)
 			{

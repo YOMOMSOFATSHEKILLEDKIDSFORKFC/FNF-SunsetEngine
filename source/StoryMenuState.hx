@@ -12,6 +12,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.group.FlxGroup;
 import flixel.math.FlxMath;
 import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
@@ -266,6 +267,7 @@ class StoryMenuState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			movedBack = true;
 			MusicBeatState.switchState(new MainMenuState());
+			FlxTween.tween(FlxG.camera, {zoom: 5}, 0.8, {ease: FlxEase.expoIn});
 		}
 
 		super.update(elapsed);

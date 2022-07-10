@@ -181,9 +181,10 @@ class CreditsState extends MusicBeatState
 			],
 			[
 				'kawaisprite',
+				'kawaisprite',
 				"Composer of Friday Night Funkin'",
 				'https://twitter.com/kawaisprite',
-				'6475F3'
+				'53E52C'
 				
 			]	
 		];
@@ -300,6 +301,7 @@ class CreditsState extends MusicBeatState
 				}
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new MainMenuState());
+				FlxTween.tween(FlxG.camera, {zoom: 5}, 0.8, {ease: FlxEase.expoIn});
 				quitting = true;
 			}
 		}

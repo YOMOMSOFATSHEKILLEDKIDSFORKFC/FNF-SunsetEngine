@@ -12,6 +12,7 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
 #if MODS_ALLOWED
 import sys.FileSystem;
 import sys.io.File;
@@ -202,6 +203,7 @@ class SocialsState extends MusicBeatState
 			}
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			MusicBeatState.switchState(new MainMenuState());
+			FlxTween.tween(FlxG.camera, {zoom: 5}, 0.8, {ease: FlxEase.expoIn});
 			// if (ClientPrefs.lowEndMode)
 			// 	MusicBeatState.switchState(new SimpleMenuState());
 			// else
