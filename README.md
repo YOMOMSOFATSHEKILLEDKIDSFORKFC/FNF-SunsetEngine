@@ -1,6 +1,6 @@
 # Friday Night Funkin' - Sunset Engine:
 - This is a modified version of the psych engine.
-- Github: https://gamebanana.com/mods/388612
+- Gamebanana: https://gamebanana.com/mods/388612 lol
 
 ## Updates:
 - Added Menu Animations
