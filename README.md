@@ -1,3 +1,5 @@
+![Logo ShitHead](assets/preload/images/logo.png)
+
 # Friday Night Funkin' - Sunset Engine:
 - This is a modified version of the psych engine.
 - Gamebanana: https://gamebanana.com/mods/388612 lol
