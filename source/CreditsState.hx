@@ -81,28 +81,111 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['Sunset Engine Team'],
+			[
+				'HackTheAir',
+				'hack',
+				'Main Programmer',
+				'https://twitter.com/AnimatesHack',
+				'C800FF'
+			],
+			[''],
 			['Psych Engine Team'],
-			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
-			['RiverOaken',			'river',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/RiverOaken',		'B42F71'],
-			['shubs',				'shubs',			'Additional Programmer of Psych Engine',						'https://twitter.com/yoshubs',			'5E99DF'],
+			[
+				'Shadow Mario',
+				'shadowmario',
+				'Main Programmer of Psych Engine',
+				'https://twitter.com/Shadow_Mario_',
+				'444444'
+			],
+			[
+				'RiverOaken',
+				'riveroaken',
+				'Main Artist/Animator of Psych Engine',
+				'https://twitter.com/river_oaken',
+				'C30085'
+			],
+			[
+				'bb-panzu',
+				'bb-panzu',
+				'Additional Programmer of Psych Engine',
+				'https://twitter.com/bbsub3',
+				'389A58'
+			],
 			[''],
-			['Former Engine Members'],
-			['bb-panzu',			'bb',				'Ex-Programmer of Psych Engine',								'https://twitter.com/bbsub3',			'3E813A'],
-			[''],
-			['Engine Contributors'],
-			['iFlicky',				'flicky',			'Composer of Psync and Tea Time\nMade the Dialogue Sounds',		'https://twitter.com/flicky_i',			'9E29CF'],
-			['SqirraRNG',			'sqirra',			'Crash Handler and Base code for\nChart Editor\'s Waveform',	'https://twitter.com/gedehari',			'E1843A'],
-			['PolybiusProxy',		'proxy',			'.MP4 Video Loader Library (hxCodec)',							'https://twitter.com/polybiusproxy',	'DCD294'],
-			['KadeDev',				'kade',				'Fixed some cool stuff on Chart Editor\nand other PRs',			'https://twitter.com/kade0912',			'64A250'],
-			['Keoiki',				'keoiki',			'Note Splash Animations',										'https://twitter.com/Keoiki_',			'D2D2D2'],
-			['Nebula the Zorua',	'nebula',			'LUA JIT Fork and some Lua reworks',							'https://twitter.com/Nebula_Zorua',		'7D40B2'],
-			['Smokey',				'smokey',			'Sprite Atlas Support',											'https://twitter.com/Smokey_5_',		'483D92'],
+			['Psych Engine Contributors'],
+			[
+				'shubs',
+				'shubs',
+				'New Input System Programmer',
+				'https://twitter.com/yoshubs',
+				'4494E6'
+			],
+			[
+				'SqirraRNG',
+				'gedehari',
+				'Chart Editor\'s Sound Waveform base',
+				'https://twitter.com/gedehari',
+				'FF9300'
+			],
+			[
+				'iFlicky',
+				'iflicky',
+				'Delay/Combo Menu Song Composer\nand Dialogue Sounds',
+				'https://twitter.com/flicky_i',
+				'C549DB'
+			],
+			[
+				'PolybiusProxy',
+				'polybiusproxy',
+				'.MP4 Video Loader Extension',
+				'https://twitter.com/polybiusproxy',
+				'FFEAA6'
+			],
+			[
+				'Keoiki',
+				'keoiki',
+				'Note Splash Animations',
+				'https://twitter.com/Keoiki_',
+				'FFFFFF'
+			],
+			[
+				'Smokey',
+				'smokey',
+				'Spritemap Texture Support',
+				'https://twitter.com/Smokey_5_',
+				'0033CC'
+			],
 			[''],
 			["Funkin' Crew"],
-			['ninjamuffin99',		'ninjamuffin99',	"Programmer of Friday Night Funkin'",							'https://twitter.com/ninja_muffin99',	'CF2D2D'],
-			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",								'https://twitter.com/PhantomArcade3K',	'FADC45'],
-			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",								'https://twitter.com/evilsk8r',			'5ABD4B'],
-			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",								'https://twitter.com/kawaisprite',		'378FC7']
+			[
+				'ninjamuffin99',
+				'ninjamuffin99',
+				"Programmer of Friday Night Funkin'",
+				'https://twitter.com/ninja_muffin99',
+				'F73838'
+			],
+			[
+				'PhantomArcade',
+				'phantomarcade',
+				"Animator of Friday Night Funkin'",
+				'https://twitter.com/PhantomArcade3K',
+				'FFBB1B'
+			],
+			[
+				'evilsk8r',
+				'evilsk8r',
+				"Artist of Friday Night Funkin'",
+				'https://twitter.com/evilsk8r',
+				'53E52C'
+			],
+			[
+				'kawaisprite',
+				"Composer of Friday Night Funkin'",
+				'https://twitter.com/kawaisprite',
+				'6475F3'
+				
+			]	
 		];
 		
 		for(i in pisspoop){
