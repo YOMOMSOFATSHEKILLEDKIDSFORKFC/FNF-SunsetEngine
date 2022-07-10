@@ -137,6 +137,8 @@ class MainMenuState extends MusicBeatState
 		// 		changeItem();
 		// 	}
 		// });
+
+		
 			menuItem.updateHitbox();
 			menuItem.scrollFactor.set(0, scr);
 		}
