@@ -26,7 +26,7 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.6.2'; //This is also used for Discord RPC
-	public static var sunsetEngineVersion:String = '0.0.1';
+	public static var sunsetEngineVersion:String = '0.0.2';
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -130,23 +130,32 @@ class MainMenuState extends MusicBeatState
 			menuItem.antialiasing = ClientPrefs.globalAntialiasing;
 			//menuItem.setGraphicSize(Std.int(menuItem.width * 0.58));
 		//	menuItem.updateHitbox();
-			FlxTween.tween(menuItem, {y: -130 + (i * 120)}, 1 + (i * 1.25), {
-				ease: FlxEase.expoInOut,
-				onComplete: function(flxTween:FlxTween)
-				{
-					changeItem();
-				}
-			});
+		// FlxTween.tween(menuItem, {y: -130 + (i * 120)}, 1 + (i * 1.25), {
+		// 	ease: FlxEase.expoInOut,
+		// 	onComplete: function(flxTween:FlxTween)
+		// 	{
+		// 		changeItem();
+		// 	}
+		// });
 			menuItem.updateHitbox();
 			menuItem.scrollFactor.set(0, scr);
 		}
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Sunset Engine v" + sunsetEngineVersion, 12);
+		// Sunset Engine
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 64, 0, "Sunset Engine v" + sunsetEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
+
+		// Psych Engine
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
+		versionShit.scrollFactor.set();
+		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(versionShit);
+
+		// Friday Night Funkin'
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -283,6 +292,8 @@ class MainMenuState extends MusicBeatState
 			{
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
+				FlxTween.tween(FlxG.camera, {zoom: 5}, 0.8, {ease: FlxEase.expoIn});
+
 			}
 			#end
 		}

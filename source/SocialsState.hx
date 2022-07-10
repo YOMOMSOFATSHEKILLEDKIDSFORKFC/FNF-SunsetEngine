@@ -114,7 +114,14 @@ class SocialsState extends MusicBeatState
 				'github',
 				"Sunset Engine's Github Page",
 				"https://github.com/Hackx2/FNF-SunsetEngine/",
-				"161C21"
+				"606365",
+			],
+			[
+				'GameBanana',
+				'GameBanana',
+				"Sunset Engine's Gamebanana Page",
+				"https://gamebanana.com/mods/388612",
+				"ffe620"
 			]
 		];
 

@@ -110,7 +110,9 @@
 	<section if="MODS_ALLOWED">
 		<assets path='example_mods' rename='mods' embed='false'/>
 	</section>
-	<assets path='art/readme.txt' rename='do NOT readme.txt' />
+	<assets path='messages/readme.txt' rename='do NOT readme.txt' />
+	<!--No Bitches Txt-->
+	<assets path='messages/notsoimportant.txt' rename='important.txt' />
 	<!-- <template path='mods' /> -->
 	
 	<!-- assets path="CHANGELOG.md" rename='changelog.txt' -->
