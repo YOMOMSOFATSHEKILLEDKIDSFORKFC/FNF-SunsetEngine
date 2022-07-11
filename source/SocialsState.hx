@@ -91,22 +91,22 @@ class SocialsState extends MusicBeatState
 			// [
 			// 	'Discord',
 			// 	'discord',
-			// 	"BEAT!Engine's Discord Server!",
-			// 	'https://discord.gg/CqWbjb6w',
+			// 	"Sunset Engine's Discord Server!",
+			// 	'https://discord.gg/',
 			// 	'5165F6'
 			// ],
 			// [
 			// 	'Twitter',
 			// 	'twitter',
-			// 	"BEAT!Engine's Twitter Account!",
-			// 	'https://twitter.com/beat_engine',
+			// 	"Sunset Engine's Twitter Account!",
+			// 	'https://twitter.com/',
 			// 	'3DADE2'
 			// ],
 			// [
 			// 	'YouTube',
 			// 	'youtube',
-			// 	"BEAT!Engine's YouTube Channel!",
-			// 	'https://youtu.be/VfmpFCe7SPA',
+			// 	"Sunset Engine's YouTube Channel!",
+			// 	'https://youtu.be/',
 			// 	'DD0004',
 			// ],
 			[

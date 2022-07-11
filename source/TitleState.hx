@@ -294,11 +294,11 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 		FlxTween.tween(logoBl, {
-			y: logoBl.y + 120,
-			x: logoBl.x + 120,
-			angle: -4,
-			alpha: 1
-		}, 1.4, {ease: FlxEase.expoInOut});
+		 	y: logoBl.y + 120,
+		 	x: logoBl.x + 120,
+		 	angle: -4,
+		 	alpha: 1
+		 }, 1.4, {ease: FlxEase.expoInOut});
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
